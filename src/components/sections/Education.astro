@@ -1,7 +1,103 @@
 ---
-import Section from "../Section.astro";
+import Section from "../Section.astro"
+
+import { education } from "@cv"
+
+const [ed] = education
 ---
 
 <Section>
-    <h2>Education</h2>
+    <h2>Educación</h2>
+    <div class="head">
+        <h3>&bull; {ed.area} &bull;</h3>
+        <time class="fecha">{ed.startDate} - {ed.endDate}</time>
+    </div>
+    <p>Formado en la {ed.institution}</p>
+    <hr>
+  <ul>
+    {
+      education.map(({ institution, startDate, endDate, courses }) => {
+        const years = `${startDate} - ${endDate}`
+
+        return (
+          <li>
+            <article>
+              <footer>
+
+                {courses.map((course) => {
+                  return <span>{course}</span>
+                })}
+
+              </footer>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
 </Section>
+
+<style>
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .head h3 {
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    .head time {
+        font-size: 0.80rem;
+        margin-top: 12px;
+    }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  article h3 {
+    font-weight: 500;
+    color: #111;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 0.6rem;
+  }
+
+  footer span {
+    border-radius: 6px;
+    margin-right: 10px;
+    background: #eee;
+    color: #000;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
+
+  @media (width <= 700px) {
+    time {
+      text-align: right;
+    }
+  }
+</style>

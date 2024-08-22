@@ -6,7 +6,7 @@
     "email": "leonardogarcarr23@gmail.com",
     "phone": "+53 59288490",
     "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "summary": "Soy Ingeniero en Ciencias Informáticas, me apasiona la programación y el diseño web. Mis conocimientos están enfocados al desarrollo frontend utilizando tecnologías como HTML, CSS, JavaScript, TypeScript, y el marco de trabajo Angular.",
     "location": {
       "address": "",
       "postalCode": "08820",
@@ -16,13 +16,8 @@
     },
     "profiles": [
       {
-        "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
         "network": "GitHub",
-        "username": "midudev",
+        "username": "codevby",
         "url": "https://github.com/codevby"
       }
     ]
@@ -72,17 +67,23 @@
       "Awarded 'Volunteer of the Month'"
     ]
   }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
+  "education": [
+    {
+    "institution": "Universidad de las Ciencias Informáticas de la Habana",
+      "url": "https://www.uci.cu/",
+      "area": "Ingeniero en Ciencias Informáticas",
+      "studyType": "Ingeniería",
+      "startDate": "2021",
+      "endDate": "2024",
+      "score": "4.3",
+      "courses": [
+        "Matemática Avanzada",
+        "Arquitectura de Computadoras",
+        "Sistemas de Base de Datos (SQL & NoSQL)",
+        "Ingeniería de Software",
+        "Gestión de Proyectos Informáticos",
+        "Redes y Seguridad Informática"
+      ]
   }],
   "awards": [{
     "title": "Award",
@@ -126,31 +127,10 @@
       ]
     },
     {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
-    },
-    {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
       ]
     },
     {
@@ -168,14 +148,7 @@
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
+      "name": "Angular",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "JavaScript Library", "UI"

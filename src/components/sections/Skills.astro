@@ -1,18 +1,42 @@
 ---
 import Section from "../Section.astro";
 
+import HTML from "@/icons/html.astro"
+import CSS from "@/icons/css.astro"
+import JavaScript from "@/icons/javascript.astro"
+import TypeScript from "@/icons/type.astro"
+import Git from "@/icons/git.astro"
+import GitHub from "@/icons/GitHub.astro"
+import Angular from "@/icons/Angular.astro"
+
 import { skills } from "@cv"
+
+const SKILLS_ICONS: Record<string, any> = {
+    HTML,
+    CSS,
+    JavaScript,
+    TypeScript,
+    Git,
+    GitHub,
+    Angular
+}
 ---
 
 <Section>
-    <h2>Habilidades</h2>
+    <h2>Habilidades técnicas</h2>
     <ul>
         {
-            skills.map(({ name }) => (
-                <li>
-                    <span>{name}</span>
-                </li>
-            ) )
+            skills.map(({ name }) => {
+
+                const Icon = SKILLS_ICONS[name]
+
+                return(
+                    <li>
+                        {Icon && <Icon />}<span>{name}</span>
+                    </li>
+                )
+                
+            } )
         }
     </ul>
 </Section>
@@ -25,11 +49,14 @@ import { skills } from "@cv"
     }
 
     li {
+        align-items: center;
+        background: #555;
         border-radius: 6px;
-        color: #fff;
-        background-color: #555;
-        font-size: .8rem;
+        color: white;
+        display: flex;
+        font-size: 0.8rem;
         font-weight: 500;
+        gap: 4px;
         padding: 0.2rem 0.6rem;
     }
 
