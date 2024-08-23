@@ -52,16 +52,28 @@ import Section from "../Section.astro";
 </Section>
 
 <style>
+    div > section {
+        width: 100%;
+        height: auto;
+
+    }
+
     div {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax( 250px, 1fr )
+        );
+        gap: 48px;
     }
 
     section {
         width: 50%;
     }
+    
     hr {
-        width: 80%;
+        width: 90%;
         margin-left: -10px;
     }
 </style>
