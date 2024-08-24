@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Leonardo García Arredondo",
-    "label": "Programador y Diseñador Web",
+    "label": "Ingeniero Informático, Programador y Diseñador Web",
     "image": "./img.jpg",
     "email": "leonardogarcarr23@gmail.com",
     "phone": "+53 59288490",
     "url": "https://midu.dev",
-    "summary": "Soy Ingeniero en Ciencias Informáticas, me apasiona la programación y el diseño web. Mis conocimientos están enfocados al desarrollo frontend utilizando tecnologías como HTML, CSS, JavaScript, TypeScript, y el marco de trabajo Angular.",
+    "summary": "Soy Ingeniero en Ciencias Informáticas, apasionado por el diseño y la programación de software funcional, seguro y sostenible. Tengo conocimientos generales de ingeniería y diseño de software que abarcan todas las etapas del desarrollo. Mis conocimientos y habilidades de programación están enfocadas al desarrollo frontend",
     "location": {
       "address": "",
       "postalCode": "08820",
