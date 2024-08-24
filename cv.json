@@ -6,7 +6,7 @@
     "email": "leonardogarcarr23@gmail.com",
     "phone": "+53 59288490",
     "url": "https://midu.dev",
-    "summary": "Soy Ingeniero en Ciencias Informáticas, apasionado por el diseño y la programación de software funcional, seguro y sostenible. Tengo conocimientos generales de ingeniería y diseño de software que abarcan todas las etapas del desarrollo. Mis conocimientos y habilidades de programación están enfocadas al desarrollo frontend",
+    "summary": "Soy Ingeniero en Ciencias Informáticas. Me apasionado el diseño y desarrollo de software. Tengo conocimientos generales de ingeniería y diseño que abarcan todas las etapas de desarrollo software. Mis conocimientos y habilidades de programación están enfocadas al desarrollo frontend",
     "location": {
       "address": "",
       "postalCode": "08820",
@@ -77,11 +77,11 @@
       "endDate": "2024",
       "score": "4.3",
       "courses": [
-        "Matemática Avanzada",
-        "Arquitectura de Computadoras",
-        "Sistemas de Base de Datos (SQL & NoSQL)",
+        "Matemáticas Avanzada",
         "Ingeniería de Software",
+        "Sistemas de Base de Datos (SQL & NoSQL)",
         "Gestión de Proyectos Informáticos",
+        "Arquitectura de Computadoras",
         "Redes y Seguridad Informática"
       ]
   }],
