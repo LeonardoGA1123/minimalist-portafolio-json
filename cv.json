@@ -213,66 +213,29 @@
   ],
   "projects": [
     {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "name": "Telematic services configuration manager",
+      "isActive": false,
+      "haveGithub": true,
+      "haveWeb": false,
+      "description": "A comprehensive web application that manages solutions and practical exercises related to case studies on telematic service configuration. Designed to digitize the educational process at my university. The application enhances accessibility to learning resources while optimizing teaching and learning in the field of telematic services.",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "Angular 18.2",
+        "Express.js",
+        "MongoDB"
       ],
-      "url": "https://mars.codes"
+      "github": "https://github.com/codevby/frontend-tesis"
     },
     {
-      "name": "AdventJS",
+      "name": "IndustrialX | E-commerce Solution",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "haveGithub": false,
+      "haveWeb": true,
+      "description": "A cutting-edge e-commerce platform tailored for Cuba's food industry, focusing on creating seamless connections between vendors and consumers.",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "Frontend developer",
+        "Angular 19.2"
       ],
-      "url": "https://adventjs.dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
-      ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "url": "https://industialx-frontend.pages.dev/"
     }
   ]
 }

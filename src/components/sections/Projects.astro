@@ -1,52 +1,76 @@
 ---
+import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 
-import { projects } from "@cv"
+import { projects } from "@cv";
+import WorldMap from "@/icons/WorldMap.astro";
 ---
+
 <!-- url, description, highlight, name, isActive -->
 <Section>
     <h2>Proyectos</h2>
     <ul>
         {
-            projects.map(({ url, description, isActive, name, highlights }) => {
-
-                return (
-                    <li>
-                        <article>
-                            <header>
-                                <h3>
-                                <a href={url} title={`Ver el proyecto ${name}`}>
-                                    {name}
-                                </a>
-                                { isActive && <span>&bull;</span> }
-                                </h3>
-                                <p>{description}</p>
-                            </header>
-                            <footer>
-                                {
-                                    highlights.map((highlight) =>{
-                                        return(
-                                            <span>{highlight}</span>
-                                        )
-                                    })
-                                }
-                            </footer>
-                        </article>
-                    </li>
-                )
-            } )
+            projects.map(
+                ({
+                    url,
+                    github,
+                    description,
+                    isActive,
+                    haveGithub,
+                    haveWeb,
+                    name,
+                    highlights,
+                }) => {
+                    return (
+                        <li>
+                            <article>
+                                <header>
+                                    <h3>
+                                        <a>{name}</a>
+                                        {isActive && <span>&bull;</span>}
+                                    </h3>
+                                    <p>{description}</p>
+                                </header>
+                                <footer>
+                                    <div class="highlights">
+                                        {highlights.map((highlight) => {
+                                            return <span>{highlight}</span>;
+                                        })}
+                                    </div>
+                                    <div class="buttons">
+                                        {haveWeb && (
+                                            <a
+                                                href={url}
+                                                title={`See the web page of ${name}`}
+                                            >
+                                                <WorldMap />
+                                                See Web Page
+                                            </a>
+                                        )}
+                                        {haveGithub && (
+                                            <a
+                                                href={github}
+                                                title={`See the code of ${name}`}
+                                            >
+                                                <GitHub /> See Code
+                                            </a>
+                                        )}
+                                    </div>
+                                </footer>
+                            </article>
+                        </li>
+                    );
+                },
+            )
         }
-        
     </ul>
 </Section>
 
 <style>
     ul {
         display: grid;
-        grid-template-columns: repeat(
-            auto-fill,
-            minmax(200px, 1fr)
-        );
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1rem;
     }
 
@@ -60,7 +84,7 @@ import { projects } from "@cv"
         height: 100%;
     }
 
-    header{
+    header {
         flex: 1;
     }
 
@@ -76,10 +100,6 @@ import { projects } from "@cv"
         color: #111;
     }
 
-    article a:hover {
-        text-decoration: underline;
-    }
-
     article p {
         font-size: 0.75rem;
         line-height: 1.2;
@@ -88,18 +108,46 @@ import { projects } from "@cv"
 
     footer {
         display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 4px;
         font-size: 0.6rem;
-
     }
 
     footer span {
         border-radius: 6px;
         background: #eee;
         color: #444;
-        font-size: .6rem;
+        font-size: 0.6rem;
         font-weight: 500;
         padding: 0.2rem 0.6rem;
+        margin-right: 4px;
+    }
+
+    footer a {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        border: 1px solid #4a9ee9;
+        border-radius: 6px;
+        background: none;
+        color: #111;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.2rem 0.6rem;
+        transition: all 0.3s ease;
+
+        svg {
+            margin-right: 6px;
+        }
+    }
+
+    footer a:hover {
+        background-color: #4a9ee9;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
     }
 </style>
